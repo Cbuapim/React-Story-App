@@ -1,0 +1,72 @@
+.story-footer {
+  background: #F5E6D3;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 4px dashed #E74C3C;
+  position: relative;
+}
+
+.story-footer::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 3px dashed #52A675;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.moral-label {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4A7C59;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+}
+
+.moral-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #5D4037;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+}
+
+.footer-credit {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 0.85rem;
+  color: #8B7355;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .story-footer {
+    padding: 32px 16px;
+  }
+
+  .story-footer::before {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+  }
+
+  .moral-text {
+    font-size: 1.3rem;
+  }
+}
